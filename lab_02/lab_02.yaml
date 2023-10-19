@@ -1,0 +1,851 @@
+openapi: 3.0.2
+info:
+  title: ToDo
+  version: 0.1.0
+paths:
+  /users:
+    post:
+      tags:
+        - Authentification
+      summary: Registration
+      operationId: create_user
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+  /auth:  
+    patch:
+      tags:
+        - Authentification
+      summary: Authentification
+      operationId: open_user
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                title: Response Open User
+                type: string
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+  /users/{userID}/calendars:
+    get:
+      tags:
+        - Calendar
+      summary: Get Calendars
+      operationId: get_calendars__user__calendar_get
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+        - in: query
+          name: today
+          schema:
+            type: boolean
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                title: Response Get Calendars  User  Calendar Get
+                type: array
+                items:
+                  $ref: '#/components/schemas/Calendar'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+    patch:
+      tags:
+        - Calendar
+      summary: Patch Calendar
+      operationId: patch_calendar__user__calendar_patch
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Calendar'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+  /users/{userID}/calendars/{calendarID}:
+    get:
+      tags:
+        - Calendar
+      summary: Get Calendar
+      operationId: get_calendar__user__calendar__days__get
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+        - required: true
+          schema:
+            title: CalendarID
+            type: integer
+          name: calendarID
+          in: path
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Calendar'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+    post:
+      tags:
+        - Calendar
+      summary: Post Calendar
+      operationId: post_calendar__user__calendar__days__post
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+        - required: true
+          schema:
+            title: CalendarID
+            type: integer
+          name: calendarID
+          in: path
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Calendar'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+    delete:
+      tags:
+        - Calendar
+      summary: Delete Calendar
+      operationId: delete_calendar__user__calendar__days__delete
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+        - required: true
+          schema:
+            title: CalendarID
+            type: integer
+          name: calendarID
+          in: path
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+  /users/{userID}/disciplines:
+    get:
+      tags:
+        - Discipline
+      summary: Get Disciplines
+      operationId: get_disciplines__user__discipline_get
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                title: Response Get Disciplines  User  Discipline Get
+                type: array
+                items:
+                  $ref: '#/components/schemas/Discipline'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+    patch:
+      tags:
+        - Discipline
+      summary: Patch Discipline
+      operationId: patch_discipline__user__discipline_patch
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Discipline'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+  /users/{userID}/disciplines/{disciplineID}:
+    get:
+      tags:
+        - Discipline
+      summary: Get Discipline
+      operationId: get_discipline__user__discipline__name__get
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+        - required: true
+          schema:
+            title: DisciplineID
+            type: integer
+          name: disciplineID
+          in: path
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Discipline'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+    post:
+      tags:
+        - Discipline
+      summary: Post Discipline
+      operationId: post_discipline__user__discipline__name__post
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+        - required: true
+          schema:
+            title: DisciplineID
+            type: integer
+          name: disciplineID
+          in: path
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Discipline'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+    delete:
+      tags:
+        - Discipline
+      summary: Delete Discipline
+      operationId: delete_discipline__user__discipline__name__delete
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+        - required: true
+          schema:
+            title: DisciplineID
+            type: integer
+          name: disciplineID
+          in: path
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+  /users/{userID}/disciplines/{disciplineID}/tasks:
+    get:
+      tags:
+        - Task
+      summary: Get Dtasks
+      operationId: get_Dtasks__user__discipline__name__tasks_get
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+        - required: true
+          schema:
+            title: DisciplineID
+            type: integer
+          name: disciplineID
+          in: path
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                title: Response Get Dtasks  User  Discipline  Name  Tasks Get
+                type: array
+                items:
+                  $ref: '#/components/schemas/Task'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+  /users/{userID}/tasks:
+    get:
+      tags:
+        - Task
+      summary: Get Tasks
+      operationId: get_tasks__user__task_get
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+        - in: query
+          name: datefrom
+          schema:
+            type: string
+        - in: query
+          name: dateto
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                title: Response Get Tasks  User  Task Get
+                type: array
+                items:
+                  $ref: '#/components/schemas/Task'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+    patch:
+      tags:
+        - Task
+      summary: Patch Task
+      operationId: patch_task__user__task_patch
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Task'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+  /users/{userID}/tasks/{taskID}:
+    get:
+      tags:
+        - Task
+      summary: Get Task
+      operationId: get_task__user__task__name__get
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+        - required: true
+          schema:
+            title: taskID
+            type: integer
+          name: taskID
+          in: path
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+    post:
+      tags:
+        - Task
+      summary: Post Task
+      operationId: post_task__user__task__name__post
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+        - required: true
+          schema:
+            title: TaskID
+            type: integer
+          name: taskID
+          in: path
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Task'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+    delete:
+      tags:
+        - Task
+      summary: Delete Task
+      operationId: delete_task__user__task__name__delete
+      parameters:
+        - required: true
+          schema:
+            title: UserID
+            type: integer
+          name: userID
+          in: path
+        - required: true
+          schema:
+            title: TaskID
+            type: integer
+          name: taskID
+          in: path
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mesg'
+components:
+  schemas:
+    User:
+      title: User
+      required:
+        - Login
+        - Password
+      type: object
+      properties:
+        Day:
+          title: Login
+          type: string
+        Password:
+          title: Password
+          type: string
+    Calendar:
+      title: Calendar
+      required:
+        - Day
+        - Message
+      type: object
+      properties:
+        Day:
+          title: Day
+          type: integer
+        Message:
+          title: Message
+          type: string
+    Discipline:
+      title: Discipline
+      required:
+        - Name
+        - Description
+        - Summarize
+      type: object
+      properties:
+        Name:
+          title: Name
+          type: string
+        Description:
+          title: Description
+          type: string
+        Summarize:
+          title: Summarize
+          type: integer
+    Mesg:
+      title: Mesg
+      required:
+        - string
+      type: object
+      properties:
+        string:
+          title: String
+          type: string
+    Task:
+      title: Task
+      required:
+        - Name
+        - DName
+        - Discription
+        - Finished
+        - Cost
+        - Data
+      type: object
+      properties:
+        Name:
+          title: Name
+          type: string
+        DName:
+          title: Dname
+          type: string
+        Discription:
+          title: Discription
+          type: string
+        Finished:
+          title: Finished
+          type: boolean
+        Cost:
+          title: Cost
+          type: integer
+        Data:
+          title: Data
+          type: string

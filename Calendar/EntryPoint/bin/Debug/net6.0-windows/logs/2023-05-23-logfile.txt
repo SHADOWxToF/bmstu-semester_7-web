@@ -1,0 +1,187 @@
+2023-05-23 12:09:01.7593 (UTC+3:00) Info Приложение запущено  
+2023-05-23 12:09:03.4295 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 12:09:03.5315 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 12:09:04.2795 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 12:09:04.2795 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:07:39.7639 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:07:41.3336 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:07:41.5837 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:07:42.1540 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:07:42.1540 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:07:47.2256 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:07:48.7860 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:08:08.3876 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:08:09.0057 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:08:09.3695 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:08:09.6278 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:08:09.6278 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:08:49.7212 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:08:50.3891 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:08:50.6470 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:08:50.9542 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:08:50.9565 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:09:46.7838 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:09:49.8852 (UTC+3:00) Info sql-запрос: insert into public.calendars values (1, @p1)  
+2023-05-23 18:09:53.8569 (UTC+3:00) Info sql-запрос: select * from public.calendars where day=1  
+2023-05-23 18:10:21.8879 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:10:22.6595 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:10:22.9265 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:10:23.1706 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:10:23.1706 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:11:33.3506 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:11:33.9573 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:11:34.1590 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:11:34.5181 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:12:57.3755 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:14:14.8044 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:14:15.8545 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:14:16.0945 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:14:16.3662 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:14:21.2844 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:14:39.6993 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:14:40.2193 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:14:40.5347 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:14:40.8582 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:14:40.8582 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:16:08.4935 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:16:09.0870 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:16:09.3465 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:16:09.6753 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:16:09.6753 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:16:29.2043 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:16:29.7824 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:16:30.1106 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:16:30.4595 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:16:30.4595 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:19:54.1382 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:19:54.7765 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:19:55.0173 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:19:55.3723 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:19:55.3723 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:19:55.3723 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:20:53.1611 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:20:53.9350 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:20:54.1930 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:20:54.4763 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:20:54.4763 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:20:54.4763 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:21:18.7927 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:21:19.5245 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:21:19.7406 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:21:20.0272 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:21:20.0272 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:21:20.0272 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:21:30.8593 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:21:31.5772 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:21:31.9170 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:21:32.2622 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:21:32.2622 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:21:32.2622 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:21:42.0328 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:21:42.7824 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:21:43.0326 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:21:43.3593 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:21:43.3639 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:21:43.3639 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:22:16.6528 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:22:17.2425 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:22:17.4851 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:22:17.8387 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:22:17.8387 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:22:17.8459 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:22:24.1613 (UTC+3:00) Info sql-запрос: insert into public.holidays (select date(@p1), @p2 from (select count(*) from public.holidays) where 0=(select count(*) from public.tasks where date=date(@p1)))  
+2023-05-23 18:22:24.2773 (UTC+3:00) Error BL.Exceptions.UnpredictableException: UnpredictableException  BL.Exceptions.UnpredictableException: UnpredictableException
+ ---> BL.Exceptions.UnpredictableException: UnpredictableException
+ ---> Npgsql.PostgresException (0x80004005): 42601: subquery in FROM must have an alias
+
+POSITION: 55
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|233_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at DataAccess.DA.Implementations.HolidayRepository.CreateHoliday(HolidayData holiday) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\DataAccess\DA\Implementations\HolidayRepository.cs:line 93
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: subquery in FROM must have an alias
+    Hint: For example, FROM (SELECT ...) [AS] foo.
+    Position: 55
+    File: gram.y
+    Line: 13256
+    Routine: base_yyparse
+   --- End of inner exception stack trace ---
+   at DataAccess.DA.Implementations.HolidayRepository.CreateHoliday(HolidayData holiday) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\DataAccess\DA\Implementations\HolidayRepository.cs:line 103
+   at BL.Models.Implementations.Holiday.CreateHoliday(HolidayData holiday) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Models\Implementations\Holiday.cs:line 25
+   at BL.Presenters.Implementations.HPresenter.CreateHoliday(Object sender, HolidayData holidayData) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Presenters\Implementations\HPresenter.cs:line 69
+   --- End of inner exception stack trace ---
+   at BL.Presenters.Implementations.HPresenter.CreateHoliday(Object sender, HolidayData holidayData) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Presenters\Implementations\HPresenter.cs:line 81
+   at GUI.GUI.OnEvCreateHoliday(HolidayData args) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\GUI.cs:line 116
+   at GUI.MainForm.hAccept_Click(Object sender, EventArgs e) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\MainForm.cs:line 229
+2023-05-23 18:23:27.1755 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:23:27.9195 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:23:28.1662 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:23:28.4672 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:23:28.4672 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:23:28.4710 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:23:30.5549 (UTC+3:00) Info sql-запрос: insert into public.holidays (select date(@p1), @p2 from (select count(*) from public.holidays) f where 0=(select count(*) from public.tasks where date=date(@p1)))  
+2023-05-23 18:23:30.6414 (UTC+3:00) Error BL.Exceptions.UnpredictableException: UnpredictableException  BL.Exceptions.UnpredictableException: UnpredictableException
+ ---> BL.Exceptions.BusyDate: This date in database is busy
+   at DataAccess.DA.Implementations.HolidayRepository.CreateHoliday(HolidayData holiday) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\DataAccess\DA\Implementations\HolidayRepository.cs:line 121
+   at BL.Models.Implementations.Holiday.CreateHoliday(HolidayData holiday) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Models\Implementations\Holiday.cs:line 25
+   at BL.Presenters.Implementations.HPresenter.CreateHoliday(Object sender, HolidayData holidayData) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Presenters\Implementations\HPresenter.cs:line 69
+   --- End of inner exception stack trace ---
+   at BL.Presenters.Implementations.HPresenter.CreateHoliday(Object sender, HolidayData holidayData) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Presenters\Implementations\HPresenter.cs:line 81
+   at GUI.GUI.OnEvCreateHoliday(HolidayData args) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\GUI.cs:line 116
+   at GUI.MainForm.hAccept_Click(Object sender, EventArgs e) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\MainForm.cs:line 229
+2023-05-23 18:24:05.0244 (UTC+3:00) Info sql-запрос: insert into public.holidays (select date(@p1), @p2 from (select count(*) from public.holidays) f where 0=(select count(*) from public.tasks where date=date(@p1)))  
+2023-05-23 18:26:21.7906 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:26:22.4050 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:26:22.6684 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:26:22.9452 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:26:22.9452 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:26:22.9452 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:26:25.5566 (UTC+3:00) Info sql-запрос: insert into public.holidays (select date(@p1), @p2 from (select count(*) from public.holidays) f where 0=(select count(*) from public.tasks where date=date(@p1)))  
+2023-05-23 18:26:25.6361 (UTC+3:00) Error BL.Exceptions.UnpredictableException: UnpredictableException  BL.Exceptions.UnpredictableException: UnpredictableException
+ ---> BL.Exceptions.BusyDate: This date in database is busy
+   at DataAccess.DA.Implementations.HolidayRepository.CreateHoliday(HolidayData holiday) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\DataAccess\DA\Implementations\HolidayRepository.cs:line 121
+   at BL.Models.Implementations.Holiday.CreateHoliday(HolidayData holiday) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Models\Implementations\Holiday.cs:line 25
+   at BL.Presenters.Implementations.HPresenter.CreateHoliday(Object sender, HolidayData holidayData) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Presenters\Implementations\HPresenter.cs:line 69
+   --- End of inner exception stack trace ---
+   at BL.Presenters.Implementations.HPresenter.CreateHoliday(Object sender, HolidayData holidayData) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Presenters\Implementations\HPresenter.cs:line 81
+   at GUI.GUI.OnEvCreateHoliday(HolidayData args) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\GUI.cs:line 116
+   at GUI.MainForm.hAccept_Click(Object sender, EventArgs e) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\MainForm.cs:line 229
+2023-05-23 18:26:29.3465 (UTC+3:00) Info sql-запрос: insert into public.holidays (select date(@p1), @p2 from (select count(*) from public.holidays) f where 0=(select count(*) from public.tasks where date=date(@p1)))  
+2023-05-23 18:27:49.9093 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:27:50.5866 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:27:50.7743 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:27:51.0816 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:27:51.0816 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:27:51.0816 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:28:17.9358 (UTC+3:00) Info sql-запрос: select * from public.holidays where date=date(@p1)  
+2023-05-23 18:30:21.3422 (UTC+3:00) Info Приложение запущено  
+2023-05-23 18:30:22.0462 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-23 18:30:22.2236 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:30:22.5795 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-23 18:30:22.5821 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-23 18:30:22.5821 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:30:26.8415 (UTC+3:00) Info sql-запрос: select * from public.holidays where date=date(@p1)  
+2023-05-23 18:30:27.7167 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:30:27.7167 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:30:36.3679 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:30:36.3679 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:30:37.2913 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:30:37.2913 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:30:46.8765 (UTC+3:00) Info sql-запрос: select * from public.holidays where date=date(@p1)  
+2023-05-23 18:30:48.6363 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:30:48.6363 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:30:58.1370 (UTC+3:00) Info sql-запрос: insert into public.holidays (select date(@p1), @p2 from (select count(*) from public.holidays) f where 0=(select count(*) from public.tasks where date=date(@p1)))  
+2023-05-23 18:30:58.1571 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:30:58.1606 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:30:59.5730 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:30:59.5730 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:31:01.4554 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-23 18:31:01.4554 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  

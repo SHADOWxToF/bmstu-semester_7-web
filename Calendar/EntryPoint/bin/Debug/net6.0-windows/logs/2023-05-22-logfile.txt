@@ -1,0 +1,217 @@
+2023-05-22 00:03:12.2216 (UTC+3:00) Info Приложение запущено  
+2023-05-22 00:03:13.2366 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 00:03:13.4458 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 00:03:13.9993 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 00:03:14.0136 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 00:03:14.0136 (UTC+3:00) Fatal Неизвестный тип ошибки  System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.set_Item(Int32 index, T value)
+   at GUI.MainForm.ShowTasksFromTo(List`1 tasks) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\MainForm.cs:line 242
+   at GUI.GUI.ShowTasksFromTo(List`1 tasks) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\GUI.cs:line 232
+   at BL.Presenters.Implementations.DPresenter.GetTasks(Object sender, EventArgsGetTasksFromTo args) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Presenters\Implementations\DPresenter.cs:line 46
+   at GUI.GUI.OnEvGetTasksFromTo(EventArgsGetTasksFromTo args) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\GUI.cs:line 87
+   at GUI.GUI.Start() in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\GUI.cs:line 258
+   at EntryPoint.Application.App.execute() in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\EntryPoint\Application\App.cs:line 75
+2023-05-22 00:03:52.6086 (UTC+3:00) Info Приложение запущено  
+2023-05-22 00:03:52.9952 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 00:03:53.2375 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 00:03:53.8914 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 00:03:53.8942 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 00:03:53.9133 (UTC+3:00) Fatal Неизвестный тип ошибки  System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.set_Item(Int32 index, T value)
+   at GUI.MainForm.ShowTasksFromTo(List`1 tasks) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\MainForm.cs:line 242
+   at GUI.GUI.ShowTasksFromTo(List`1 tasks) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\GUI.cs:line 232
+   at BL.Presenters.Implementations.DPresenter.GetTasks(Object sender, EventArgsGetTasksFromTo args) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Presenters\Implementations\DPresenter.cs:line 46
+   at GUI.GUI.OnEvGetTasksFromTo(EventArgsGetTasksFromTo args) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\GUI.cs:line 87
+   at GUI.GUI.Start() in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\GUI.cs:line 258
+   at EntryPoint.Application.App.execute() in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\EntryPoint\Application\App.cs:line 75
+2023-05-22 00:04:03.1230 (UTC+3:00) Info Приложение запущено  
+2023-05-22 00:04:03.4974 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 00:04:03.6987 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 00:04:04.0968 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 00:04:04.1114 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 00:04:04.1114 (UTC+3:00) Fatal Неизвестный тип ошибки  System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.set_Item(Int32 index, T value)
+   at GUI.MainForm.ShowTasksFromTo(List`1 tasks) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\MainForm.cs:line 242
+   at GUI.GUI.ShowTasksFromTo(List`1 tasks) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\GUI.cs:line 232
+   at BL.Presenters.Implementations.DPresenter.GetTasks(Object sender, EventArgsGetTasksFromTo args) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Presenters\Implementations\DPresenter.cs:line 46
+   at GUI.GUI.OnEvGetTasksFromTo(EventArgsGetTasksFromTo args) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\GUI.cs:line 87
+   at GUI.GUI.Start() in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\GUI.cs:line 258
+   at EntryPoint.Application.App.execute() in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\EntryPoint\Application\App.cs:line 75
+2023-05-22 00:04:49.9298 (UTC+3:00) Info Приложение запущено  
+2023-05-22 00:04:50.2766 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 00:04:50.4118 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 00:04:50.8278 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 00:05:47.6050 (UTC+3:00) Info Приложение запущено  
+2023-05-22 00:05:47.9670 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 00:05:48.1998 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 00:05:48.7488 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 00:07:22.9892 (UTC+3:00) Info Приложение запущено  
+2023-05-22 00:07:23.9524 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 00:07:24.1452 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 00:07:24.4787 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 00:07:24.4787 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 00:09:26.5629 (UTC+3:00) Info Приложение запущено  
+2023-05-22 00:09:27.5550 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 00:09:27.7620 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 00:09:28.0490 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 00:09:28.0522 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 00:10:14.1940 (UTC+3:00) Info Приложение запущено  
+2023-05-22 00:10:14.5900 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 00:10:14.7183 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 00:10:14.9548 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 00:10:14.9565 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 00:11:19.0903 (UTC+3:00) Info Приложение запущено  
+2023-05-22 00:11:19.7330 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 00:11:19.9044 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 00:11:20.2158 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 00:11:20.2158 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 00:12:16.0064 (UTC+3:00) Info Приложение запущено  
+2023-05-22 00:12:16.7477 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 00:12:16.9450 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 00:12:17.3000 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 00:12:17.3000 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 00:12:44.7379 (UTC+3:00) Info Приложение запущено  
+2023-05-22 00:12:45.0860 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 00:12:45.2339 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 00:12:45.7854 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 00:12:54.7285 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 16:31:26.8566 (UTC+3:00) Info Приложение запущено  
+2023-05-22 16:31:27.3279 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 16:31:27.4962 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:31:31.6375 (UTC+3:00) Error Отсутсвует соедиение с БД  BL.Exceptions.NoDBConnection: No database connection
+   at DataAccess.DA.Implementations.TaskRepository.GetTasks(DateTime from, DateTime to) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\DataAccess\DA\Implementations\TaskRepository.cs:line 71
+   at BL.Models.Implementations.Discipline.GetTasks(DateTime from, DateTime to) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Models\Implementations\Discipline.cs:line 19
+   at BL.Presenters.Implementations.DPresenter.GetTasks(Object sender, EventArgsGetTasksFromTo args) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Presenters\Implementations\DPresenter.cs:line 36
+2023-05-22 16:31:31.6375 (UTC+3:00) Error Отсутсвует соедиение с БД  BL.Exceptions.NoDBConnection: No database connection
+   at DataAccess.DA.Implementations.CalendarRepository.GetAllCalendars() in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\DataAccess\DA\Implementations\CalendarRepository.cs:line 34
+   at BL.Models.Implementations.Calendar.GetAllCalendars() in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Models\Implementations\Calendar.cs:line 21
+   at BL.Presenters.Implementations.CPresenter.NotificationRoutine() in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Presenters\Implementations\CPresenter.cs:line 35
+2023-05-22 16:31:52.7192 (UTC+3:00) Info Приложение запущено  
+2023-05-22 16:31:53.0851 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 16:31:53.3113 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:31:57.4582 (UTC+3:00) Error Отсутсвует соедиение с БД  BL.Exceptions.NoDBConnection: No database connection
+   at DataAccess.DA.Implementations.CalendarRepository.GetAllCalendars() in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\DataAccess\DA\Implementations\CalendarRepository.cs:line 34
+   at BL.Models.Implementations.Calendar.GetAllCalendars() in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Models\Implementations\Calendar.cs:line 21
+   at BL.Presenters.Implementations.CPresenter.NotificationRoutine() in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Presenters\Implementations\CPresenter.cs:line 35
+2023-05-22 16:31:57.4582 (UTC+3:00) Error Отсутсвует соедиение с БД  BL.Exceptions.NoDBConnection: No database connection
+   at DataAccess.DA.Implementations.TaskRepository.GetTasks(DateTime from, DateTime to) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\DataAccess\DA\Implementations\TaskRepository.cs:line 71
+   at BL.Models.Implementations.Discipline.GetTasks(DateTime from, DateTime to) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Models\Implementations\Discipline.cs:line 19
+   at BL.Presenters.Implementations.DPresenter.GetTasks(Object sender, EventArgsGetTasksFromTo args) in D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BL\Presenters\Implementations\DPresenter.cs:line 36
+2023-05-22 16:33:45.1483 (UTC+3:00) Info Приложение запущено  
+2023-05-22 16:33:46.4116 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 16:33:47.0560 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:33:47.6177 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 16:35:04.6511 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 16:36:58.8941 (UTC+3:00) Info Приложение запущено  
+2023-05-22 16:37:00.5194 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 16:37:00.6525 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:37:00.9050 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 16:37:00.9050 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 16:37:48.8560 (UTC+3:00) Info Приложение запущено  
+2023-05-22 16:37:49.2636 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 16:37:49.4448 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:37:49.7957 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 16:37:49.7957 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 16:40:37.7216 (UTC+3:00) Info Приложение запущено  
+2023-05-22 16:40:38.5220 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 16:40:38.7149 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:40:39.0520 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 16:42:16.1558 (UTC+3:00) Info Приложение запущено  
+2023-05-22 16:42:16.8662 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 16:42:17.0229 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:42:17.3954 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 16:42:17.3954 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 16:46:38.0424 (UTC+3:00) Info Приложение запущено  
+2023-05-22 16:46:38.9960 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 16:46:39.2666 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:46:39.5681 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 16:46:39.5681 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 16:48:02.6571 (UTC+3:00) Info Приложение запущено  
+2023-05-22 16:48:03.3725 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 16:48:03.5366 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:48:03.8585 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 16:48:03.8585 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 16:49:59.8528 (UTC+3:00) Info Приложение запущено  
+2023-05-22 16:50:00.5715 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 16:50:01.0480 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:50:01.1175 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 16:50:01.1175 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 16:52:36.2492 (UTC+3:00) Info Приложение запущено  
+2023-05-22 16:52:36.9256 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 16:52:37.1340 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:52:37.4035 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 16:52:37.4035 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 16:56:09.8799 (UTC+3:00) Info Приложение запущено  
+2023-05-22 16:56:10.5745 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 16:56:10.7179 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:56:11.0526 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 16:56:11.0526 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 16:56:12.8843 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:56:14.3789 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:56:16.4274 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:56:17.4606 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:56:18.4498 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:56:19.9350 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:56:21.2297 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:57:56.0756 (UTC+3:00) Info Приложение запущено  
+2023-05-22 16:57:56.9424 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 16:57:57.1730 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:57:57.4617 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 16:57:57.4617 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 16:57:59.1863 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:58:00.4290 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:58:03.9293 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:58:04.8803 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:58:06.0967 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:58:07.3599 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:58:34.1646 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:58:35.3031 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:58:35.8879 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:58:36.6318 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:58:38.1165 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:58:38.9831 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:58:43.3952 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:58:44.3996 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:58:50.0679 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 16:58:50.9352 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 17:16:33.2124 (UTC+3:00) Info Приложение запущено  
+2023-05-22 17:16:34.0075 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 17:16:34.2522 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 17:16:34.5656 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 17:16:34.5656 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 17:17:28.3199 (UTC+3:00) Info Приложение запущено  
+2023-05-22 17:17:29.0848 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 17:17:29.2783 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 17:17:29.5786 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 17:17:29.5786 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 17:17:49.2635 (UTC+3:00) Info Приложение запущено  
+2023-05-22 17:17:49.9096 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 17:17:50.1571 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 17:17:50.4508 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 17:17:50.4508 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 17:18:14.6143 (UTC+3:00) Info Приложение запущено  
+2023-05-22 17:18:15.3530 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 17:18:15.5394 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 17:18:15.8642 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 17:18:15.8642 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 17:18:34.8012 (UTC+3:00) Info Приложение запущено  
+2023-05-22 17:18:35.5402 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 17:18:35.8052 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 17:18:36.0916 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 17:18:36.0987 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 17:18:51.9344 (UTC+3:00) Info Приложение запущено  
+2023-05-22 17:18:52.6154 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 17:18:52.8456 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 17:18:53.1079 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 17:18:53.1079 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 17:21:18.0322 (UTC+3:00) Info Приложение запущено  
+2023-05-22 17:21:18.8144 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-22 17:21:19.0823 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 17:21:19.3450 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-05-22 17:21:19.3450 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-05-22 17:21:55.3152 (UTC+3:00) Info sql-запрос: begin; insert into public.tasks values ((select coalesce((select id from tasks where name=@p1 and discipline_name=@p3), max(id)+1, 1) from public.tasks), @p1, @p2, @p3, date(@p4), @p5, @p6);update public.disciplines set sum=(select sum(cost) from public.tasks where discipline_name=@p3) where name=@p3; commit;  
+2023-05-22 17:21:55.4644 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 17:22:07.3030 (UTC+3:00) Info sql-запрос: begin; insert into public.tasks values ((select coalesce((select id from tasks where name=@p1 and discipline_name=@p3), max(id)+1, 1) from public.tasks), @p1, @p2, @p3, date(@p4), @p5, @p6);update public.disciplines set sum=(select sum(cost) from public.tasks where discipline_name=@p3) where name=@p3; commit;  
+2023-05-22 17:22:08.4925 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-05-22 17:22:14.9595 (UTC+3:00) Info sql-запрос: begin; insert into public.tasks values ((select coalesce((select id from tasks where name=@p1 and discipline_name=@p3), max(id)+1, 1) from public.tasks), @p1, @p2, @p3, date(@p4), @p5, @p6);update public.disciplines set sum=(select sum(cost) from public.tasks where discipline_name=@p3) where name=@p3; commit;  
+2023-05-22 17:22:14.9595 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  

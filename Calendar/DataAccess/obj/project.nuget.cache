@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "6l2WaBUB2k5mBgZztz6k1fedLmgLln66VbadPxbsuDgRwLsAWAyuZYd/mu2ItrDhKB3xyypCyTXmfvf5uxxUWQ==",
+  "success": true,
+  "projectFilePath": "D:\\Desktop\\Bomonka\\Semester_7\\WEB\\bmstu-semester_7-web\\Calendar\\DataAccess\\DataAccess.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\nlog\\5.1.4\\nlog.5.1.4.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

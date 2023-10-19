@@ -1,0 +1,17 @@
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\bin\Release\net6.0-windows\OldGUI.deps.json
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\bin\Release\net6.0-windows\OldGUI.dll
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\bin\Release\net6.0-windows\OldGUI.pdb
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\bin\Release\net6.0-windows\BL.dll
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\bin\Release\net6.0-windows\BL.pdb
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\obj\Release\net6.0-windows\OldGUI.csproj.AssemblyReference.cache
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\obj\Release\net6.0-windows\GUI.Form1.resources
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\obj\Release\net6.0-windows\OldGUI.csproj.GenerateResource.cache
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\obj\Release\net6.0-windows\OldGUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\obj\Release\net6.0-windows\OldGUI.AssemblyInfoInputs.cache
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\obj\Release\net6.0-windows\OldGUI.AssemblyInfo.cs
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\obj\Release\net6.0-windows\OldGUI.csproj.CoreCompileInputs.cache
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\obj\Release\net6.0-windows\OldGUI.csproj.CopyComplete
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\obj\Release\net6.0-windows\OldGUI.dll
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\obj\Release\net6.0-windows\refint\OldGUI.dll
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\obj\Release\net6.0-windows\OldGUI.pdb
+D:\Desktop\Bomonka\Semester_6\PPO\Calendar\GUI\obj\Release\net6.0-windows\ref\OldGUI.dll

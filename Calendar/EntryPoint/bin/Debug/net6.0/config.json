@@ -1,0 +1,5 @@
+{
+    "UIType" : "console",
+    "DAType" : "postgres",
+    "DBConnection" : "Host=localhost;Username=postgres;Password=root;Database=ppo"
+}

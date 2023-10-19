@@ -1,0 +1,4 @@
+2023-05-18 17:56:02.9505 (UTC+3:00) Info Приложение запущено  
+2023-05-18 17:56:03.2352 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-05-18 17:56:03.7197 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1  
+2023-05-18 17:56:03.7257 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4  

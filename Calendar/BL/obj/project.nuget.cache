@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "z8TCKPqtMscL6EeBRmxzF9FFgvzXYSeiRnLHA++oXq/qdJcOA7pAgtf6ti8tI9fn3lKTIdLuzUF8jmkn0X4V1Q==",
+  "success": true,
+  "projectFilePath": "D:\\Desktop\\Bomonka\\Semester_7\\WEB\\bmstu-semester_7-web\\Calendar\\BL\\BL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alex\\.nuget\\packages\\nlog\\5.1.4\\nlog.5.1.4.nupkg.sha512"
+  ],
+  "logs": []
+}

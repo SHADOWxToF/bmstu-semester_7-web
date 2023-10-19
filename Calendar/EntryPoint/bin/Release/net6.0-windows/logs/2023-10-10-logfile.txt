@@ -1,0 +1,22 @@
+2023-10-10 15:34:18.5019 (UTC+3:00) Info Приложение запущено  
+2023-10-10 15:34:19.0390 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-10-10 15:34:19.2149 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=1 and finished=false  
+2023-10-10 15:34:19.2149 (UTC+3:00) Info sql-запрос: select * from public.tasks where date-current_date=4 and finished=false  
+2023-10-10 15:34:22.1170 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:22.1374 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:34.5335 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:34.5335 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:35.1233 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:35.1310 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:35.7729 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:35.7729 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:36.5235 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:36.5235 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:37.5934 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:37.6016 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:39.2041 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:39.2041 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:41.3429 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:41.3486 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:43.7734 (UTC+3:00) Info sql-запрос: select * from public.tasks where date>=date(@p1) and date<=date(@p2)  
+2023-10-10 15:34:43.7734 (UTC+3:00) Info sql-запрос: select * from public.holidays where date>=date(@p1) and date<=date(@p2)  
