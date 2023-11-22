@@ -1,4 +1,4 @@
-using BL.DTO;
+using BL.ForAPI.DTO;
 using BL.ForAPI.Interfaces;
 using NLog;
 using System.Threading.Tasks;

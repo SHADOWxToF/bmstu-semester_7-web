@@ -1,18 +1,19 @@
-﻿using BL.DTO;
+﻿using BL.ForAPI.DTO;
 namespace BL.Models.Interfaces
 {
     public interface IDiscipline
     {
-        public List<TaskData>? GetTasks(DateTime from, DateTime to);
-        public List<DisciplineData>? GetDisciplines();
-        public List<TaskData>? GetDTasks(string disciplineName);
-        public DisciplineData? GetDiscipline(string disciplineName);
-        public void CreateDiscipline(DisciplineData discipline);
-        public void UpdateDiscipline(DisciplineData discipline);
-        public void DeleteDiscipline(string disciplineName);
-        public TaskData? GetTask(string disciplineName, string taskName);
-        public void CreateTask(TaskData task);
-        public void UpdateTask(TaskData task);
-        public void DeleteTask(string taskName, string disciplineName);
+        public Task<List<TaskData>?> GetTasks(int userID, DateTime from, DateTime to);
+        public Task<List<TaskData>?> GetTasks(int userID);
+        public Task<List<DisciplineData>?> GetDisciplines(int userID);
+        public Task<List<TaskData>?> GetDTasks(int userID, int disciplineID);
+        public Task<DisciplineData?> GetDiscipline(int userID, int disciplineID);
+        public Task CreateDiscipline(DisciplineData discipline);
+        public Task UpdateDiscipline(DisciplineData discipline);
+        public Task DeleteDiscipline(int userID, int disciplineID);
+        public Task<TaskData?> GetTask(int userID, int taskID);
+        public Task CreateTask(TaskData task);
+        public Task UpdateTask(TaskData task);
+        public Task DeleteTask(int userID, int taskID);
     }
 }

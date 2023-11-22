@@ -13,3 +13,12 @@ D:\Desktop\Bomonka\Semester_6\PPO\Calendar\UI\obj\Release\net6.0\UI.dll
 D:\Desktop\Bomonka\Semester_6\PPO\Calendar\UI\obj\Release\net6.0\refint\UI.dll
 D:\Desktop\Bomonka\Semester_6\PPO\Calendar\UI\obj\Release\net6.0\UI.pdb
 D:\Desktop\Bomonka\Semester_6\PPO\Calendar\UI\obj\Release\net6.0\ref\UI.dll
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\UI\obj\Release\net6.0\UI.csproj.AssemblyReference.cache
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\UI\obj\Release\net6.0\UI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\UI\obj\Release\net6.0\UI.AssemblyInfoInputs.cache
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\UI\obj\Release\net6.0\UI.AssemblyInfo.cs
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\UI\obj\Release\net6.0\UI.csproj.CoreCompileInputs.cache
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\UI\obj\Release\net6.0\UI.sourcelink.json
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\UI\obj\Release\net6.0\UI.dll
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\UI\obj\Release\net6.0\refint\UI.dll
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\UI\obj\Release\net6.0\UI.pdb

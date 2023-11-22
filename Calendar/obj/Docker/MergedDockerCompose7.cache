@@ -1,0 +1,37 @@
+name: dockercompose16580990547063199547
+services:
+  webserver:
+    build:
+      context: D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar
+      dockerfile: WEBServer/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: webserver
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "80"
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      published: "443"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\Alex\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Alex\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+networks:
+  default:
+    name: dockercompose16580990547063199547_default

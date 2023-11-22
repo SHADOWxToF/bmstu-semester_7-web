@@ -1,0 +1,8 @@
+2023-10-26 00:05:24.3785 (UTC+3:00) Info Приложение запущено  
+2023-10-26 00:09:06.5469 (UTC+3:00) Info Приложение запущено  
+2023-10-26 00:09:20.0494 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-10-26 00:19:22.1303 (UTC+3:00) Info Приложение запущено  
+2023-10-26 00:19:58.0636 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-10-26 00:25:09.9923 (UTC+3:00) Info Приложение запущено  
+2023-10-26 00:25:21.0380 (UTC+3:00) Info sql-запрос: select * from public.calendars  
+2023-10-26 00:32:02.0654 (UTC+3:00) Info sql-запрос: select * from public.calendars  

@@ -2,7 +2,6 @@
 using Moq;
 using System;
 using System.Collections.Generic;
-using BL.DTO;
 using BL.ForAPI.Interfaces;
 using BL.Models.Interfaces;
 using BL.Presenters.Implementations;
@@ -10,6 +9,8 @@ using BL.Exceptions;
 using DataAccess.DA.Implementations;
 using Npgsql;
 using BL.Models.Implementations;
+using BL.ForAPI.DTO;
+
 namespace Tests.IntegrationsTests
 {
     [TestClass]

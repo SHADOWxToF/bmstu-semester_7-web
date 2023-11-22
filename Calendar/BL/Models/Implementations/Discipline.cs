@@ -1,11 +1,13 @@
 ﻿using BL.ForDA.Interfaces;
-using BL.DTO;
+using BL.ForAPI.DTO;
 using BL.Models.Interfaces;
+using BL.Converters;
+
 namespace BL.Models.Implementations
 {
     public class Discipline : IDiscipline
     {
-        private IDisciplineRepository disciplineRepository;
+        private readonly IDisciplineRepository disciplineRepository;
         private ITaskRepository taskRepository;
 
         public Discipline(IDisciplineRepository disciplineRepository, ITaskRepository taskRepository)
@@ -14,57 +16,62 @@ namespace BL.Models.Implementations
             this.taskRepository = taskRepository;
         }
 
-        public List<TaskData>? GetTasks(DateTime from, DateTime to)
+        public async Task<List<TaskData>?> GetTasks(int userID, DateTime from, DateTime to)
         {
-            return taskRepository.GetTasks(from, to);
+            return TaskConverter.ConvertFromDAToAPI(await taskRepository.GetTasks(userID, from, to));
         }
 
-        public List<DisciplineData>? GetDisciplines()
+        public async Task<List<TaskData>?> GetTasks(int userID)
         {
-            return disciplineRepository.GetDisciplines();
+            return TaskConverter.ConvertFromDAToAPI(await taskRepository.GetTasks(userID));
         }
 
-        public List<TaskData>? GetDTasks(string disciplineName)
+        public async Task<List<DisciplineData>?> GetDisciplines(int userID)
         {
-            return taskRepository.GetDTasks(disciplineName);
+            return DisciplineConverter.ConvertFromDAToAPI(await disciplineRepository.GetDisciplines(userID));
         }
 
-        public DisciplineData? GetDiscipline(string disciplineName)
+        public async Task<List<TaskData>?> GetDTasks(int userID, int disciplineID)
         {
-            return disciplineRepository.GetDiscipline(disciplineName);
+            return TaskConverter.ConvertFromDAToAPI(await taskRepository.GetDTasks(userID, disciplineID));
         }
 
-        public void CreateDiscipline(DisciplineData discipline)
+        public async Task<DisciplineData?> GetDiscipline(int userID, int disciplineID)
         {
-            disciplineRepository.CreateDiscipline(discipline);
+            return DisciplineConverter.ConvertFromDAToAPI(await disciplineRepository.GetDiscipline(userID, disciplineID));
         }
 
-        public void UpdateDiscipline(DisciplineData discipline)
+        public async Task CreateDiscipline(DisciplineData discipline)
         {
-            disciplineRepository.UpdateDiscipline(discipline);
+            await disciplineRepository.CreateDiscipline(DisciplineConverter.ConvertFromAPIToDA(discipline));
         }
 
-        public void DeleteDiscipline(string disciplineName)
+        public async Task UpdateDiscipline(DisciplineData discipline)
         {
-            disciplineRepository.DeleteDiscipline(disciplineName);
+            await disciplineRepository.UpdateDiscipline(DisciplineConverter.ConvertFromAPIToDA(discipline));
         }
 
-        public TaskData? GetTask(string disciplineName, string taskName)
+        public async Task DeleteDiscipline(int userID, int disciplineID)
         {
-            return taskRepository.GetTask(disciplineName, taskName);
+            await disciplineRepository.DeleteDiscipline(userID, disciplineID);
         }
 
-        public void CreateTask(TaskData task)
+        public async Task<TaskData?> GetTask(int userID, int taskID)
         {
-            taskRepository.CreateTask(task);
+            return TaskConverter.ConvertFromDAToAPI(await taskRepository.GetTask(userID, taskID));
         }
-        public void UpdateTask(TaskData task)
+
+        public async Task CreateTask(TaskData task)
         {
-            taskRepository.UpdateTask(task);
+            await taskRepository.CreateTask(TaskConverter.ConvertFromAPIToDA(task));
         }
-        public void DeleteTask(string taskName, string disciplineName)
+        public async Task UpdateTask(TaskData task)
         {
-            taskRepository.DeleteTask(taskName, disciplineName);
+            await taskRepository.UpdateTask(TaskConverter.ConvertFromAPIToDA(task));
+        }
+        public async Task DeleteTask(int userID, int taskID)
+        {
+            await taskRepository.DeleteTask(userID, taskID);
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Tests
         private EventArgs args = new();
         private object obj = new();
         private Mock<IAPI> apiMock = new();
-        private Mock<ICalendar> calendarMock = new();
+        private Mock<INotification> calendarMock = new();
         private CPresenter cpresenter;
         private List<CalendarData> dbContent = new List<CalendarData>
         {

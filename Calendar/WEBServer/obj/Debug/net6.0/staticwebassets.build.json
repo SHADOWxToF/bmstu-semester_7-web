@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "2mL6EEPQ6FVcTAPpriCzNgf3RCg8ckbYBvQaFB/sLus=",
+  "Source": "WEBServer",
+  "BasePath": "_content/WEBServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

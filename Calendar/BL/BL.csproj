@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Presenters\Interfaces\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="NLog" Version="5.1.4" />
   </ItemGroup>
 

@@ -33,4 +33,9 @@
         public BusyDate() : base("This date in database is busy") { }
     }
 
+    public class NoAccessRight : MyException
+    {
+        public NoAccessRight(Exception e) : base("No access right", e) { }
+    }
+
 }

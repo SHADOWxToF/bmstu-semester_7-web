@@ -1,0 +1,90 @@
+2023-11-08 06:58:50.8179 (UTC+3:00) Info Приложение запущено  
+2023-11-08 06:59:01.7032 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-08 06:59:01.7600 (UTC+3:00) Error Непредвиденная ошибка  BL.Exceptions.UnpredictableException: UnpredictableException
+ ---> Npgsql.NpgsqlException (0x80004005): Failed to connect to [::1]:5432
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (99): Cannot assign requested address [::1]:5432
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|219_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at DataAccess.DA.Implementations.UserRepository.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\UserRepository.cs:line 24
+   --- End of inner exception stack trace ---
+   at DataAccess.DA.Implementations.UserRepository.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\UserRepository.cs:line 35
+   at BL.Models.Implementations.User.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BL\Models\Implementations\User.cs:line 17
+   at WEBServer.APIControllers.Implementations.AuthController.Authentification(AuthorizationData authData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\WEBServer\APIControllers\Implementations\AuthPresenter.cs:line 28
+2023-11-08 07:00:48.0421 (UTC+3:00) Info Приложение запущено  
+2023-11-08 07:11:02.7378 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-08 07:15:24.8794 (UTC+3:00) Info Приложение запущено  
+2023-11-08 07:18:36.7962 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-08 07:19:10.3429 (UTC+3:00) Error Непредвиденная ошибка  BL.Exceptions.UnpredictableException: UnpredictableException
+ ---> Npgsql.NpgsqlException (0x80004005): Failed to connect to [::1]:5432
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (99): Cannot assign requested address [::1]:5432
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|219_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at DataAccess.DA.Implementations.UserRepository.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\UserRepository.cs:line 24
+   --- End of inner exception stack trace ---
+   at DataAccess.DA.Implementations.UserRepository.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\UserRepository.cs:line 35
+   at BL.Models.Implementations.User.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BL\Models\Implementations\User.cs:line 17
+   at WEBServer.APIControllers.Implementations.AuthController.Authentification(AuthorizationData authData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\WEBServer\APIControllers\Implementations\AuthPresenter.cs:line 28
+2023-11-08 07:19:55.0211 (UTC+3:00) Info Приложение запущено  
+2023-11-08 07:20:23.2511 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-08 07:20:52.0479 (UTC+3:00) Error Непредвиденная ошибка  BL.Exceptions.UnpredictableException: UnpredictableException
+ ---> Npgsql.NpgsqlException (0x80004005): Failed to connect to [::1]:5432
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (99): Cannot assign requested address [::1]:5432
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|219_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at DataAccess.DA.Implementations.UserRepository.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\UserRepository.cs:line 24
+   --- End of inner exception stack trace ---
+   at DataAccess.DA.Implementations.UserRepository.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\UserRepository.cs:line 35
+   at BL.Models.Implementations.User.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BL\Models\Implementations\User.cs:line 17
+   at WEBServer.APIControllers.Implementations.AuthController.Authentification(AuthorizationData authData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\WEBServer\APIControllers\Implementations\AuthPresenter.cs:line 28
+2023-11-08 08:22:18.0262 (UTC+3:00) Info Приложение запущено  
+2023-11-08 08:23:04.9030 (UTC+3:00) Info sql-запрос: select * from public.users where login=@p1 and password=@p2  
+2023-11-08 08:24:41.8621 (UTC+3:00) Info sql-запрос: select * from public.users where login=@p1 and password=@p2  
+2023-11-08 08:27:00.7998 (UTC+3:00) Info sql-запрос: select * from public.users where login=@p1 and password=@p2  
+2023-11-08 08:31:20.6200 (UTC+3:00) Info sql-запрос: select * from public.disciplines where user_id=1  
+2023-11-08 08:37:19.3503 (UTC+3:00) Info Приложение запущено  
+2023-11-08 08:37:48.7618 (UTC+3:00) Info sql-запрос: select * from public.users where login=@p1 and password=@p2  
+2023-11-08 08:39:04.3176 (UTC+3:00) Info Приложение запущено  
+2023-11-08 08:39:23.2468 (UTC+3:00) Info sql-запрос: select * from public.users where login=@p1 and password=@p2  
+2023-11-08 19:06:08.3070 (UTC+3:00) Info Приложение запущено  
+2023-11-08 19:06:08.5271 (UTC+3:00) Info Приложение запущено  
+2023-11-08 19:06:08.8171 (UTC+3:00) Info Приложение запущено  
+2023-11-08 19:07:10.2454 (UTC+3:00) Info sql-запрос: select * from public.users where login=@p1 and password=@p2  
+2023-11-08 19:16:29.3338 (UTC+3:00) Info Приложение запущено  
+2023-11-08 19:17:31.7609 (UTC+3:00) Info sql-запрос: select * from public.users where login=@p1 and password=@p2  
+2023-11-08 23:14:22.6803 (UTC+3:00) Info Приложение запущено  
+2023-11-08 23:14:22.7107 (UTC+3:00) Info Приложение запущено  
+2023-11-08 23:16:00.0805 (UTC+3:00) Info Приложение запущено  
+2023-11-08 23:16:00.4620 (UTC+3:00) Info Приложение запущено  
+2023-11-08 23:16:00.6197 (UTC+3:00) Info Приложение запущено  
+2023-11-08 23:16:00.7161 (UTC+3:00) Info Приложение запущено  
+2023-11-08 23:17:17.4339 (UTC+3:00) Info Приложение запущено  
+2023-11-08 23:17:17.4831 (UTC+3:00) Info Приложение запущено  
+2023-11-08 23:17:17.5595 (UTC+3:00) Info Приложение запущено  
+2023-11-08 23:17:17.6193 (UTC+3:00) Info Приложение запущено  

@@ -1,5 +1,5 @@
 {
     "UIType" : "gui",
     "DAType" : "postgres",
-    "DBConnection" : "Host=localhost;Username=postgres;Password=root;Database=ppo"
+    "DBConnection" : "Host=webdb;Username=root;Password=postgres;Database=postgres"
 }

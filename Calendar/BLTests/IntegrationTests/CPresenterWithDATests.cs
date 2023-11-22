@@ -2,7 +2,6 @@
 using Moq;
 using System;
 using System.Collections.Generic;
-using BL.DTO;
 using BL.ForAPI.Interfaces;
 using BL.Models.Interfaces;
 using BL.Presenters.Implementations;
@@ -10,6 +9,8 @@ using BL.Exceptions;
 using DataAccess.DA.Implementations;
 using Npgsql;
 using BL.Models.Implementations;
+using BL.ForAPI.DTO;
+
 namespace Tests.IntegrationsTests
 {
     [TestClass]
@@ -19,10 +20,10 @@ namespace Tests.IntegrationsTests
         private object obj = new();
         private NpgsqlConnection connection = new NpgsqlConnection("Host=localhost;Username=postgres;Password=root;Database=ppo");
         NpgsqlCommand command;
-        private CalendarRepository cRepository;
+        private NotificationRepository cRepository;
         private DisciplineRepository dRepository;
         private TaskRepository tRepository;
-        private Calendar calendar;
+        private Notification calendar;
         private CPresenter cPresenter;
         private Mock<IAPI> apiMock = new();
         List<CalendarData> calendarDB = new List<CalendarData>
@@ -45,8 +46,8 @@ namespace Tests.IntegrationsTests
         {
             dRepository = new DisciplineRepository(connection);
             tRepository = new TaskRepository(connection);
-            cRepository = new CalendarRepository(connection);
-            calendar = new Calendar(dRepository, tRepository, cRepository);
+            cRepository = new NotificationRepository(connection);
+            calendar = new Notification(dRepository, tRepository, cRepository);
             cPresenter = new CPresenter(apiMock.Object, calendar);
             command = new NpgsqlCommand("begin; delete from calendars;delete from tasks;delete from disciplines;insert into public.calendars values(1, 'qwerty'),(4, 'qqqqwerty');insert into public.disciplines values('d1', 'desc1', 4),('d2', 'desc2', 6);insert into public.tasks values(1, 't1', 'desc1', 'd1', '2023-05-16', 3, 'true'),(2, 't2', 'desc2', 'd1', '2023-05-16', 1, 'false'),(3, 't3', 'desc3', 'd2', '2023-06-16', 6, 'true'); commit;", connection);
         }

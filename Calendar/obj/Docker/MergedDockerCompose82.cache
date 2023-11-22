@@ -1,0 +1,157 @@
+name: dockercompose16580990547063199547
+services:
+  nginx:
+    container_name: nginx
+    image: nginx
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "80"
+      protocol: tcp
+    - mode: ingress
+      target: 433
+      published: "433"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\nginx
+      target: /etc/nginx
+      bind:
+        create_host_path: true
+  pgadmin:
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: postgres@example.com
+      PGADMIN_DEFAULT_PASSWORD: postgres
+    image: dpage/pgadmin4
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8000"
+      protocol: tcp
+  webdb-master:
+    container_name: webdb-master
+    environment:
+      POSTGRESQL_DATABASE: webdb
+      POSTGRESQL_PASSWORD: postgres
+      POSTGRESQL_REPLICATION_MODE: master
+      POSTGRESQL_REPLICATION_PASSWORD: repl_password
+      POSTGRESQL_REPLICATION_USER: repl_user
+      POSTGRESQL_USERNAME: root
+    image: bitnami/postgresql:latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 5432
+      published: "5432"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\pg_data_master
+      target: /bitnami/postgresql
+      bind:
+        create_host_path: true
+  webdb-slave:
+    container_name: webdb-slave
+    depends_on:
+      webdb-master:
+        condition: service_started
+    environment:
+      POSTGRESQL_MASTER_HOST: webdb-master
+      POSTGRESQL_MASTER_PORT_NUMBER: "5432"
+      POSTGRESQL_PASSWORD: postgres
+      POSTGRESQL_REPLICATION_MODE: slave
+      POSTGRESQL_REPLICATION_PASSWORD: repl_password
+      POSTGRESQL_REPLICATION_USER: repl_user
+    image: bitnami/postgresql:latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 5432
+      published: "5433"
+      protocol: tcp
+  webserver:
+    build:
+      context: D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar
+      dockerfile: WEBServer/Dockerfile
+      args:
+        DBConnection: Host=webdb-master;Username=root;Password=postgres;Database=webdb
+    container_name: webserver
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:80
+    image: webserver
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "5000"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\Alex\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Alex\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+  webserver-1:
+    build:
+      context: D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar
+      dockerfile: WEBServer/Dockerfile
+      args:
+        DBConnection: Host=webdb-master;Username=root;Password=postgres;Database=webdb
+    container_name: webserver-1
+    image: webserver
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "5001"
+      protocol: tcp
+  webserver-2:
+    build:
+      context: D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar
+      dockerfile: WEBServer/Dockerfile
+      args:
+        DBConnection: Host=webdb-master;Username=root;Password=postgres;Database=webdb
+    container_name: webserver-2
+    image: webserver
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "5002"
+      protocol: tcp
+  webserver-mirror:
+    build:
+      context: D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar
+      dockerfile: WEBServer/Dockerfile
+      args:
+        DBConnection: Host=webdb-slave;Username=root;Password=postgres;Database=webdb
+    container_name: webserver-mirror
+    image: webserver
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "5003"
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose16580990547063199547_default

@@ -1,0 +1,89 @@
+name: dockercompose16580990547063199547
+services:
+  nginx:
+    image: nginx
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "80"
+      protocol: tcp
+    - mode: ingress
+      target: 433
+      published: "433"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: bind
+      source: D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\nginx\nginx.conf
+      target: /etc/nginx/nginx.conf
+      bind:
+        create_host_path: true
+    - type: volume
+      target: .nginx
+      volume: {}
+  pgadmin:
+    environment:
+      PGADMIN_DEFAULT_EMAIL: postgres@example.com
+      PGADMIN_DEFAULT_PASSWORD: postgres
+    image: dpage/pgadmin4
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8000"
+      protocol: tcp
+    restart: always
+  webdb:
+    environment:
+      POSTGRES_DB: webdb
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: root
+    image: postgres
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 5432
+      published: "5432"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: bind
+      source: D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\pg_data
+      target: /var/lib/postgresql/data
+      bind:
+        create_host_path: true
+  webserver:
+    build:
+      context: D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar
+      dockerfile: WEBServer/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:80
+    image: webserver
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "5000"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\Alex\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Alex\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+networks:
+  default:
+    name: dockercompose16580990547063199547_default

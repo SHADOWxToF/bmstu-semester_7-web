@@ -15,9 +15,9 @@ namespace EntryPoint.Application
     {
         private IDisciplineRepository dRepository;
         private ITaskRepository tRepository;
-        private ICalendarRepository cRepository;
+        private INotificationRepository cRepository;
         private IHolidayRepository hRepository;
-        private ICalendar calendar;
+        private INotification calendar;
         private IDiscipline discipline;
         private IHoliday holiday;
         private IAPI ui;
@@ -35,7 +35,7 @@ namespace EntryPoint.Application
                 tRepository = new TaskRepository(connection);
                 hRepository = new HolidayRepository(connection);
                 connection = new NpgsqlConnection(config.DBConnection);
-                cRepository = new CalendarRepository(connection);
+                cRepository = new NotificationRepository(connection);
             }
             else
             {
@@ -51,7 +51,7 @@ namespace EntryPoint.Application
                 executable = false;
                 return;
             }
-            calendar = new Calendar(dRepository, tRepository, cRepository);
+            calendar = new Notification(dRepository, tRepository, cRepository);
             discipline = new Discipline(dRepository, tRepository);
             holiday = new Holiday(hRepository);
             cPresenter = new CPresenter(ui, calendar);

@@ -1,0 +1,35 @@
+2023-11-15 14:48:43.1823 (UTC+3:00) Info Приложение запущено  
+2023-11-15 14:49:01.0784 (UTC+3:00) Info sql-запрос: select * from public.users where login=@p1 and password=@p2  
+2023-11-15 14:49:25.1009 (UTC+3:00) Info sql-запрос: begin; delete from public.tasks where discipline_id=1 and user_id=1;delete from public.disciplines where id=1 and user_id=1;commit;  
+2023-11-15 14:54:49.7012 (UTC+3:00) Info Приложение запущено  
+2023-11-15 14:55:00.8951 (UTC+3:00) Info sql-запрос: select * from public.users where login=@p1 and password=@p2  
+2023-11-15 14:55:45.4854 (UTC+3:00) Info sql-запрос: update public.disciplines set description=@p1 where id=1 and user_id=1  
+2023-11-15 15:01:08.4215 (UTC+3:00) Info Приложение запущено  
+2023-11-15 15:01:25.1815 (UTC+3:00) Info sql-запрос: select * from public.users where login=@p1 and password=@p2  
+2023-11-15 15:02:02.7655 (UTC+3:00) Info sql-запрос: update public.disciplines set description=@p1 where id=1 and user_id=1  
+2023-11-15 15:06:11.4933 (UTC+3:00) Info Приложение запущено  
+2023-11-15 15:06:21.8869 (UTC+3:00) Info sql-запрос: select * from public.users where login=@p1 and password=@p2  
+2023-11-15 15:06:42.2312 (UTC+3:00) Info sql-запрос: update public.disciplines set description=@p1 where id=1 and user_id=1  
+2023-11-15 15:09:43.9360 (UTC+3:00) Info Приложение запущено  
+2023-11-15 15:09:55.3881 (UTC+3:00) Info sql-запрос: select * from public.users where login=@p1 and password=@p2  
+2023-11-15 15:10:14.0724 (UTC+3:00) Info sql-запрос: update public.disciplines set description=@p1 where id=1 and user_id=1  
+2023-11-15 15:10:25.8744 (UTC+3:00) Error Нет прав доступа к базе данных  BL.Exceptions.NoAccessRight: No access right
+ ---> Npgsql.PostgresException (0x80004005): 25006: cannot execute UPDATE in a read-only transaction
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at DataAccess.DA.Implementations.DisciplineRepository.UpdateDiscipline(DisciplineData discipline) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\DisciplineRepository.cs:line 123
+  Exception data:
+    Severity: ERROR
+    SqlState: 25006
+    MessageText: cannot execute UPDATE in a read-only transaction
+    File: utility.c
+    Line: 414
+    Routine: PreventCommandIfReadOnly
+   --- End of inner exception stack trace ---
+   at DataAccess.DA.Implementations.DisciplineRepository.UpdateDiscipline(DisciplineData discipline) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\DisciplineRepository.cs:line 132
+   at BL.Models.Implementations.Discipline.UpdateDiscipline(DisciplineData discipline) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BL\Models\Implementations\Discipline.cs:line 51
+   at WEBServer.APIControllers.Implementations.DisciplineController.UpdateDiscipline(Int32 userID, Int32 disciplineID, DisciplineData disciplineData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\WEBServer\APIControllers\Implementations\DisciplineController.cs:line 118

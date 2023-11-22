@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "kjsVw84uiAZt/csS1N/nnOw87T76i93A6vVCXZ2wwXd5t/GOyi95QUyN5VyQ8BUP+qC0+evS8NzmriLe9ZPiPQ==",
+  "dgSpecHash": "uUBSaYDeWI3ClSpoVIzI6ed/Rgm0PC4CFqCpwBjG2Tqs0I4CQSmktBUu1v/x5lkHoc5qs2lI0Lxm6aUn3OVq0Q==",
   "success": true,
   "projectFilePath": "D:\\Desktop\\Bomonka\\Semester_7\\WEB\\bmstu-semester_7-web\\Calendar\\UI\\UI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Alex\\.nuget\\packages\\nlog\\5.1.4\\nlog.5.1.4.nupkg.sha512"
+    "C:\\Users\\Alex\\.nuget\\packages\\nlog\\5.1.4\\nlog.5.1.4.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.23\\microsoft.aspnetcore.app.ref.6.0.23.nupkg.sha512"
   ],
   "logs": []
 }

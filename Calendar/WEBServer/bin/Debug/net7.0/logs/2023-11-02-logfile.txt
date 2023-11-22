@@ -1,0 +1,53 @@
+2023-11-02 01:33:22.6357 (UTC+3:00) Info Приложение запущено  
+2023-11-02 01:33:29.9426 (UTC+3:00) Info Приложение запущено  
+2023-11-02 01:40:09.3856 (UTC+3:00) Info Приложение запущено  
+2023-11-02 01:51:28.3321 (UTC+3:00) Info Приложение запущено  
+2023-11-02 01:55:41.6312 (UTC+3:00) Info Приложение запущено  
+2023-11-02 02:26:05.5740 (UTC+3:00) Info Приложение запущено  
+2023-11-02 03:32:15.0397 (UTC+3:00) Info Приложение запущено  
+2023-11-02 03:32:48.4142 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-02 04:06:49.5659 (UTC+3:00) Info Приложение запущено  
+2023-11-02 04:07:10.3070 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-02 04:07:42.3328 (UTC+3:00) Info sql-запрос: select * from public.tasks where user_id=1  
+2023-11-02 04:07:42.3413 (UTC+3:00) Error Непредвиденная ошибка  BL.Exceptions.UnpredictableException: UnpredictableException
+ ---> Npgsql.PostgresException (0x80004005): 42703: column "user_id" does not exist
+
+POSITION: 34
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at DataAccess.DA.Implementations.TaskRepository.GetTasks(Int32 userID) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\TaskRepository.cs:line 95
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "user_id" does not exist
+    Position: 34
+    File: parse_relation.c
+    Line: 3651
+    Routine: errorMissingColumn
+   --- End of inner exception stack trace ---
+   at DataAccess.DA.Implementations.TaskRepository.GetTasks(Int32 userID) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\TaskRepository.cs:line 108
+   at BL.Models.Implementations.Discipline.GetTasks(Int32 userID) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BL\Models\Implementations\Discipline.cs:line 24
+   at BL.Presenters.Implementations.DisciplineController.GetTasks(Int32 userID, String dateFrom, String dateTo) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\WEBServer\Presenters\Implementations\DisciplineController.cs:line 199
+2023-11-02 04:08:40.6883 (UTC+3:00) Info Приложение запущено  
+2023-11-02 04:09:06.7061 (UTC+3:00) Info Приложение запущено  
+2023-11-02 04:09:26.5623 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-02 04:10:37.4959 (UTC+3:00) Info sql-запрос: select * from public.tasks where user_id=1  
+2023-11-02 04:15:29.0790 (UTC+3:00) Info Приложение запущено  
+2023-11-02 04:15:41.7005 (UTC+3:00) Info Приложение запущено  
+2023-11-02 04:15:59.1367 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-02 04:16:52.5751 (UTC+3:00) Info sql-запрос: select * from public.tasks where user_id=1  
+2023-11-02 10:20:42.0876 (UTC+3:00) Info Приложение запущено  
+2023-11-02 11:10:02.5138 (UTC+3:00) Info Приложение запущено  
+2023-11-02 11:13:12.9707 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-02 11:19:04.6969 (UTC+3:00) Info sql-запрос: select * from public.disciplines where user_id=1  
+2023-11-02 11:19:24.7884 (UTC+3:00) Info sql-запрос: select * from public.tasks where user_id=1  
+2023-11-02 11:20:09.0756 (UTC+3:00) Info sql-запрос: select * from public.notifications where user_id=1  
+2023-11-02 11:20:34.6877 (UTC+3:00) Info sql-запрос: select notifications.id, task_id, notifications.user_id, days, message from notifications join tasks on notifications.task_id=tasks.id where current_date-tasks.date=notifications.days  
+2023-11-02 11:21:15.7863 (UTC+3:00) Info sql-запрос: select * from public.tasks where discipline_id=2  
+2023-11-02 11:21:21.5745 (UTC+3:00) Info sql-запрос: select * from public.tasks where discipline_id=0  
+2023-11-02 11:42:51.7509 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  

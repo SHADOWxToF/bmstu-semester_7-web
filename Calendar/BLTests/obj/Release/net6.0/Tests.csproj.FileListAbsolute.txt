@@ -122,3 +122,13 @@ D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BLTests\obj\Release\net6.0\Tests.pdb
 D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BLTests\obj\Release\net6.0\Tests.genruntimeconfig.cache
 D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BLTests\obj\Release\net6.0\ref\Tests.dll
 D:\Desktop\Bomonka\Semester_6\PPO\Calendar\BLTests\bin\Release\net6.0\NLog.dll
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BLTests\bin\Release\net6.0\CoverletSourceRootsMapping
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BLTests\obj\Release\net6.0\Tests.csproj.AssemblyReference.cache
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BLTests\obj\Release\net6.0\Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BLTests\obj\Release\net6.0\Tests.AssemblyInfoInputs.cache
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BLTests\obj\Release\net6.0\Tests.AssemblyInfo.cs
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BLTests\obj\Release\net6.0\Tests.csproj.CoreCompileInputs.cache
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BLTests\obj\Release\net6.0\Tests.sourcelink.json
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BLTests\obj\Release\net6.0\Tests.dll
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BLTests\obj\Release\net6.0\refint\Tests.dll
+D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BLTests\obj\Release\net6.0\Tests.pdb

@@ -1,0 +1,83 @@
+2023-11-01 08:49:13.7049 (UTC+3:00) Info Приложение запущено  
+2023-11-01 08:52:00.1697 (UTC+3:00) Info Приложение запущено  
+2023-11-01 09:35:35.4330 (UTC+3:00) Info Приложение запущено  
+2023-11-01 09:36:10.2145 (UTC+3:00) Info Приложение запущено  
+2023-11-01 09:37:23.6533 (UTC+3:00) Info Приложение запущено  
+2023-11-01 09:38:17.0215 (UTC+3:00) Info Приложение запущено  
+2023-11-01 09:40:30.0574 (UTC+3:00) Info Приложение запущено  
+2023-11-01 09:40:49.7959 (UTC+3:00) Info Приложение запущено  
+2023-11-01 09:41:06.8737 (UTC+3:00) Info Приложение запущено  
+2023-11-01 09:41:42.6079 (UTC+3:00) Info Приложение запущено  
+2023-11-01 09:42:18.6207 (UTC+3:00) Info Приложение запущено  
+2023-11-01 09:42:43.9943 (UTC+3:00) Info Приложение запущено  
+2023-11-01 09:43:10.7255 (UTC+3:00) Info Приложение запущено  
+2023-11-01 09:46:20.4759 (UTC+3:00) Info Приложение запущено  
+2023-11-01 10:16:07.4034 (UTC+3:00) Info Приложение запущено  
+2023-11-01 13:57:57.3857 (UTC+3:00) Info Приложение запущено  
+2023-11-01 14:16:52.2348 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-01 14:16:56.3504 (UTC+3:00) Error Отсутсвует соедиение с БД  BL.Exceptions.NoDBConnection: No database connection
+   at DataAccess.DA.Implementations.UserRepository.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\UserRepository.cs:line 33
+   at BL.Models.Implementations.User.IsExisted(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BL\Models\Implementations\User.cs:line 17
+   at WEBServer.Authorization.AuthController.Authentification(AuthorizationData authData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\WEBServer\Authorization\AuthPresenter.cs:line 28
+2023-11-01 14:19:47.1090 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-01 14:19:47.1706 (UTC+3:00) Error Непредвиденная ошибка  BL.Exceptions.UnpredictableException: UnpredictableException
+ ---> Npgsql.PostgresException (0x80004005): 57P03: the database system is starting up
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.Internal.NpgsqlConnector.Authenticate(String username, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|219_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at DataAccess.DA.Implementations.UserRepository.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\UserRepository.cs:line 24
+  Exception data:
+    Severity: FATAL
+    SqlState: 57P03
+    MessageText: the database system is starting up
+    File: postmaster.c
+    Line: 2381
+    Routine: ProcessStartupPacket
+   --- End of inner exception stack trace ---
+   at DataAccess.DA.Implementations.UserRepository.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\UserRepository.cs:line 35
+   at BL.Models.Implementations.User.IsExisted(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BL\Models\Implementations\User.cs:line 17
+   at WEBServer.Authorization.AuthController.Authentification(AuthorizationData authData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\WEBServer\Authorization\AuthPresenter.cs:line 28
+2023-11-01 14:19:55.4177 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-01 14:19:55.4177 (UTC+3:00) Error Непредвиденная ошибка  BL.Exceptions.UnpredictableException: UnpredictableException
+ ---> Npgsql.PostgresException (0x80004005): 57P03: the database system is starting up
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.Internal.NpgsqlConnector.Authenticate(String username, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|219_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at DataAccess.DA.Implementations.UserRepository.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\UserRepository.cs:line 24
+  Exception data:
+    Severity: FATAL
+    SqlState: 57P03
+    MessageText: the database system is starting up
+    File: postmaster.c
+    Line: 2381
+    Routine: ProcessStartupPacket
+   --- End of inner exception stack trace ---
+   at DataAccess.DA.Implementations.UserRepository.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\UserRepository.cs:line 35
+   at BL.Models.Implementations.User.IsExisted(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BL\Models\Implementations\User.cs:line 17
+   at WEBServer.Authorization.AuthController.Authentification(AuthorizationData authData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\WEBServer\Authorization\AuthPresenter.cs:line 28
+2023-11-01 14:21:01.6943 (UTC+3:00) Info Приложение запущено  
+2023-11-01 14:22:55.1687 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-01 14:24:41.2556 (UTC+3:00) Info sql-запрос: select * from public.disciplines  
+2023-11-01 14:56:28.2057 (UTC+3:00) Info Приложение запущено  
+2023-11-01 14:56:58.2650 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-01 18:25:26.5852 (UTC+3:00) Info Приложение запущено  
+2023-11-01 21:51:31.4802 (UTC+3:00) Info Приложение запущено  
+2023-11-01 21:51:56.3358 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-01 21:52:00.4445 (UTC+3:00) Error Отсутсвует соедиение с БД  BL.Exceptions.NoDBConnection: No database connection
+   at DataAccess.DA.Implementations.UserRepository.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\DataAccess\DA\Implementations\UserRepository.cs:line 33
+   at BL.Models.Implementations.User.GetUser(UserData userData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\BL\Models\Implementations\User.cs:line 17
+   at WEBServer.Authorization.AuthController.Authentification(AuthorizationData authData) in D:\Desktop\Bomonka\Semester_7\WEB\bmstu-semester_7-web\Calendar\WEBServer\Authorization\AuthPresenter.cs:line 28
+2023-11-01 21:52:30.4468 (UTC+3:00) Info Приложение запущено  
+2023-11-01 21:52:51.0722 (UTC+3:00) Info sql-запрос: select * from public.users where id=1  
+2023-11-01 21:53:19.7596 (UTC+3:00) Info sql-запрос: select * from public.disciplines  
+2023-11-01 22:47:19.9173 (UTC+3:00) Info Приложение запущено  

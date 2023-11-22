@@ -1,5 +1,6 @@
 ﻿using BL.ForAPI.Interfaces;
-using BL.DTO;
+using BL.ForAPI.DTO;
+
 namespace UI
 {
     public class ConsoleUI : IAPI
